@@ -17,7 +17,7 @@ class CreatePostsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->unsignedBigInteger('user_id');
-            $table->string('title', 60)->nullable();
+            $table->string('title', 60);
             $table->text('description')->nullable();
             $table->boolean('is_active')->default(0);
             $table->dateTime('published_at')->nullable();
